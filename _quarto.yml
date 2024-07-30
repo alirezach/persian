@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "تحلیل داده با علی‌رضا"
+  navbar:
+    left:
+      - text: صفحه اصلی
+        href: https://alirezach.github.io
+      - text: وبلاگ
+        href: index.qmd
+#      - about.qmd
+      - icon: linkedin
+        href: https://www.linkedin.com/in/alirezachamanzar/
+      - icon: twitter
+        href: https://x.com/alirezach
+      - icon: github
+        menu:
+          - text: سورس کد
+            url:  https://github.com/alirezach/persian
+          - text: مشکلات را گزارش دهید
+            url:  https://github.com/alirezach/persian/issues
+
+format:
+  html:
+    theme:
+      light: sandstone
+      dark: sandstone
+    css: fa.scss
+language: fa.yml
+editor: visual
+

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body, p, h1,h2,h3,h4,h5 {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+[lang="fa"] {
+  direction: rtl;
+  text-align: right;
+}
+body, .title, .content, .quarto-title-banner, .quarto-title ,.title, .navbar-title  {
+  direction: rtl;
+}
