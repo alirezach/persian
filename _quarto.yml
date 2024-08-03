@@ -27,7 +27,7 @@ format:
     theme:
       light: sandstone
       dark: sandstone
-    css: fa.scss
+    css: fa.css
 language: fa.yml
 editor: visual
 
