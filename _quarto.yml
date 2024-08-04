@@ -21,6 +21,10 @@ website:
             url:  https://github.com/alirezach/persian
           - text: مشکلات را گزارش دهید
             url:  https://github.com/alirezach/persian/issues
+  page-footer:
+    border: false
+    right: "©[علیرضا چمن‌زار](https://github.com/alirezach) 1403~"
+    left: "ساخته شده با R و کوارتو بر بستر گیتهاب"
 
 format:
   html:
