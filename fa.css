@@ -14,3 +14,4 @@ body  {
 body, .title, .content, .quarto-title-banner, .quarto-title ,.title, .navbar-title  {
   direction: rtl;
 }
+a {color: rgb(94 94 94); !important}
