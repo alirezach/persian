@@ -1,0 +1,15 @@
+{
+  "hash": "8afbd8331dee7197cb188a9a37657364",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"اخبار دانشگاه علامه؛ سایه ایدئولوژیک بر دانشگاه \"\ndescription: \"داده‌هایی خارجکی و حومه\"\nauthor: \"علیرضا چمن‌زار\"\ndate: \"2024-08-03\"\ndate-format: short\ncategories: [تحلیل داده, داده]\neditor: \n  markdown: \n    wrap: sentence\n    location: block\n    prefix: \"mydoc\"\ntoc: true\ncitation:\n  url: https://bit.ly/bigdata-privacy-poverty\nappendix-cite-as: display\nhtml:\n  code-fold: false\n  code-tools: false\nexecute:\n  warning: false\n  message: false\nengine: knitr\n---\n\n\n\n\n\nسلام\n\nاستخراج عنوان، تاریخ، توضیحات و لینک اخبار از سایت دانشگاه علامه از زمان شروع به کار معتمدی\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(rvest)\nlibrary(dplyr)\nlibrary(purrr)\nlibrary(furrr)\n\n# تعریف تابع برای استخراج داده از یک صفحه\nscrape_page <- function(url) {\n  page <- read_html(url)\n  \n  items <- page %>% html_nodes(\".item-content\")\n  \n  data <- map_dfr(items, function(item) {\n    title <- item %>% html_node(\".title a\") %>% html_text(trim = TRUE)\n    link <- item %>% html_node(\".title a\") %>% html_attr(\"href\")\n    date <- item %>% html_node(\".item-meta-data\") %>% html_text(trim = TRUE)\n    description <- item %>% html_node(\"p\") %>% html_text(trim = TRUE)\n    \n    return(tibble(Title = title, Date = date, Link = link, Description = description))\n  })\n  \n  return(data)\n}\n\n# ایجاد لیستی از URLها\npage_numbers <- 1:141\nurls <- paste0(\"https://atu.ac.ir/fa/news?page=\", page_numbers)\n\n# استخراج داده به صورت موازی\nplan(multisession)  # برای اجرای موازی در سیستم عامل‌های مختلف ممکن است نیاز به تنظیمات دیگری باشد\n\nall_data <- future_map_dfr(urls, scrape_page, .progress = TRUE)\n\n\n# ذخیره داده‌ها در یک فایل CSV با کدگذاری UTF-8\nwrite.csv(all_data, \"atu_news.csv\", row.names = FALSE, fileEncoding = \"UTF-8\")\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

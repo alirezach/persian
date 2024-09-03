@@ -11,7 +11,7 @@ editor:
     location: block
     prefix: "mydoc"
 citation:
-  url: https://alirezach.github.io/persian/posts/2024-08-03-bigdata-privacy-poverty
+  url: https://bit.ly/bigdata-privacy-poverty
 appendix-cite-as: display
 ---
 
@@ -21,7 +21,7 @@ appendix-cite-as: display
 . این مطالعه بر جامعه آمریکا متمرکز هست
 .
 
-[^1]: Mary Madden, Michele Gilman, Karen Levy, Alice Marwick, **Privacy, Poverty, and Big Data: A Matrix of V , and Big Data: A Matrix of Vulnerabilities for P abilities for Poor Americans**, 2017, Washington University Law Review [دسترسی به مقاله](https://openscholarship.wustl.edu/cgi/viewcontent.cgi?article=6265&context=law_lawreview "Privacy, Poverty, and Big Data: A Matrix of Vulnerabilities for Poor Americans")
+[^1]: Mary Madden, Michele Gilman, Karen Levy, Alice Marwick, **Privacy, Poverty, and Big Data:A Matrix of Vulnerabilities for Poor Americans**, 2017, Washington University Law Review [دسترسی به مقاله](https://openscholarship.wustl.edu/cgi/viewcontent.cgi?article=6265&context=law_lawreview "Privacy, Poverty, and Big Data: A Matrix of Vulnerabilities for Poor Americans")
 
 ## تأثیرات فقر بر فرد و خانواده
 
@@ -93,5 +93,3 @@ appendix-cite-as: display
 این اقدامات می‌تواند به بهبود وضعیت اقتصادی و اجتماعی افراد فقیر کمک کند و جامعه‌ای عادلانه‌تر و پایدارتر ایجاد کند.
 
 این یادداشت خلاصه‌ای از پژوهشی است که ابتدای متن به آن اشاره شد.
-
-در صورت نیاز به رفرنس داده۷ می‌توانید از فرمت زیر استفاده کنید.

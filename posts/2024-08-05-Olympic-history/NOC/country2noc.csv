@@ -1,0 +1,207 @@
+Country,NOC,continent
+Algeria,ALG,Africa
+Angola,ANG,Africa
+Benin,BEN,Africa
+Botswana,BOT,Africa
+Burkina Faso,BUR,Africa
+Burundi,BDI,Africa
+Cameroon,CMR,Africa
+Cabo Verde,CPV,Africa
+Central African Republic,CAF,Africa
+Chad,CHA,Africa
+Comoros,COM,Africa
+Congo,CGO,Africa
+Democratic Republic of the Congo,COD,Africa
+Cote deIvoire,CIV,Africa
+Djibouti,DJI,Africa
+Egypt,EGY,Africa
+Eritrea,ERI,Africa
+Eswatini,SWZ,Africa
+Ethiopia,ETH,Africa
+Gabon,GAB,Africa
+Gambia,GAM,Africa
+Ghana,GHA,Africa
+Guinea,GUI,Africa
+Guinea,Bissau,Africa
+Equatorial Guinea,GEQ,Africa
+Kenya,KEN,Africa
+Lesotho,LES,Africa
+Liberia,LBR,Africa
+Libya,LBA,Africa
+Madagascar,MAD,Africa
+Malawi,MAW,Africa
+Mali,MLI,Africa
+Morocco,MAR,Africa
+Mauritius,MRI,Africa
+Mauritania,MTN,Africa
+Mozambique,MOZ,Africa
+Namibia,NAM,Africa
+Niger,NIG,Africa
+Nigeria,NGR,Africa
+Rwanda,RWA,Africa
+Sao Tome and Principe,STP,Africa
+Senegal,SEN,Africa
+Seychelles,SEY,Africa
+Sierra Leone,SLE,Africa
+Somalia,SOM,Africa
+South Africa,RSA,Africa
+South Sudan,SSD,Africa
+Sudan,SUD,Africa
+Uganda,UGA,Africa
+United Republic of Tanzania,TAN,Africa
+Togo,TOG,Africa
+Tunisia,TUN,Africa
+Zambia,ZAM,Africa
+Zimbabwe,ZIM,Africa
+Antigua and Barbuda,ANT,Americas
+Argentina,ARG,Americas
+Aruba,ARU,Americas
+Bahamas,BAH,Americas
+Barbados,BAR,Americas
+Belize,BIZ,Americas
+Bermuda,BER,Americas
+Bolivia,BOL,Americas
+Brazil,BRA,Americas
+Cayman Islands,CAY,Americas
+Canada,CAN,Americas
+Chile,CHI,Americas
+Colombia,COL,Americas
+Costa Rica,CRC,Americas
+Cuba,CUB,Americas
+Dominican Republic,DOM,Americas
+Dominica,DMA,Americas
+El Salvador,ESA,Americas
+Ecuador,ECU,Americas
+Grenada,GRN,Americas
+Guatemala,GUA,Americas
+Guyana,GUY,Americas
+Haiti,HAI,Americas
+Honduras,HON,Americas
+Jamaica,JAM,Americas
+Mexico,MEX,Americas
+Nicaragua,NCA,Americas
+Panama,PAN,Americas
+Paraguay,PAR,Americas
+Peru,PER,Americas
+Puerto Rico,PUR,Americas
+Saint Kitts and Nevis,SKN,Americas
+Saint Lucia,LCA,Americas
+St. Vincent and the Grenadines,VIN,Americas
+Suriname,SUR,Americas
+Trinidad and Tobago,TTO,Americas
+United States of America,USA,Americas
+Uruguay,URU,Americas
+Venezuela,VEN,Americas
+"Virgin Islands, British",IVB,Americas
+"Virgin Islands, US",ISV,Americas
+Afghanistan,AFG,Asia
+Bahrain,BRN,Asia
+Bangladesh,BAN,Asia
+Bhutan,BHU,Asia
+Brunei Darussalam,BRU,Asia
+Cambodia,CAM,Asia
+Peoples Republic of China,CHN,Asia
+Republic of Korea,KOR,Asia
+"Hong Kong, China",HKG,Asia
+India,IND,Asia
+Indonesia,INA,Asia
+Islamic Republic of Iran,IRI,Asia
+Iraq,IRQ,Asia
+Japan,JPN,Asia
+Jordan,JOR,Asia
+Kazakhstan,KAZ,Asia
+Kyrgyzstan,KGZ,Asia
+Kuwait,KUW,Asia
+Lao Peoples Democratic Republic,LAO,Asia
+Lebanon,LBN,Asia
+Malaysia,MAS,Asia
+Maldives,MDV,Asia
+Mongolia,MGL,Asia
+Myanmar,MYA,Asia
+Nepal,NEP,Asia
+Oman,OMA,Asia
+Pakistan,PAK,Asia
+Palestine,PLE,Asia
+Philippines,PHI,Asia
+Qatar,QAT,Asia
+Democratic Peoples Republic of Korea,PRK,Asia
+Saudi Arabia,KSA,Asia
+Singapore,SGP,Asia
+Sri Lanka,SRI,Asia
+Syrian Arab Republic,SYR,Asia
+Tajikistan,TJK,Asia
+Chinese Taipei,TPE,Asia
+Thailand,THA,Asia
+Democratic Rep of Timor Leste,TLS,Asia
+Turkmenistan,TKM,Asia
+United Arab Emirates,UAE,Asia
+Uzbekistan,UZB,Asia
+Vietnam,VIE,Asia
+Yemen,YEM,Asia
+Albania,ALB,Europe
+Andorra,AND,Europe
+Armenia,ARM,Europe
+Austria,AUT,Europe
+Azerbaijan,AZE,Europe
+Belgium,BEL,Europe
+Bosnia and Herzegovina,BIH,Europe
+Bulgaria,BUL,Europe
+Cyprus,CYP,Europe
+Croatia,CRO,Europe
+Czechia,CZE,Europe
+Denmark,DEN,Europe
+Spain,ESP,Europe
+Estonia,EST,Europe
+Finland,FIN,Europe
+France,FRA,Europe
+Georgia,GEO,Europe
+Germany,GER,Europe
+Great Britain,GBR,Europe
+Greece,GRE,Europe
+Hungary,HUN,Europe
+Ireland,IRL,Europe
+Iceland,ISL,Europe
+Israel,ISR,Europe
+Italy,ITA,Europe
+Kosovo,KOS,Europe
+Latvia,LAT,Europe
+Liechtenstein,LIE,Europe
+Lithuania,LTU,Europe
+Luxembourg,LIE,Europe
+North Macedonia,MKD,Europe
+Malta,MLT,Europe
+Republic of Moldova,MDA,Europe
+Monaco,MON,Europe
+Montenegro,MNE,Europe
+Netherlands,NED,Europe
+Norway,NOR,Europe
+Poland,POL,Europe
+Portugal,POR,Europe
+Romania,ROU,Europe
+San Marino,SMR,Europe
+Serbia,SRB,Europe
+Slovakia,SVK,Europe
+Slovenia,SLO,Europe
+Sweden,SWE,Europe
+Switzerland,SUI,Europe
+Turkiye,TUR,Europe
+Ukraine,UKR,Europe
+American Samoa,ASA,Oceania
+Australia,AUS,Oceania
+Cook Islands,COK,Oceania
+Fiji,FIJ,Oceania
+Guam,GUM,Oceania
+Kiribati,KIR,Oceania
+Marshall Islands,MHL,Oceania
+Federated States of Micronesia,FSM,Oceania
+Nauru,NRU,Oceania
+New Zealand,NZL,Oceania
+Palau,PLW,Oceania
+Papua New Guinea,PNG,Oceania
+Solomon Islands,SOL,Oceania
+Samoa,SAM,Oceania
+Tonga,TGA,Oceania
+Tuvalu,TUV,Oceania
+Vanuatu,VAN,Oceania
+Individual Neutral Athletes,AIN,olympic
+ Refugee Olympic Team,EOR,olympic

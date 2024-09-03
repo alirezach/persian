@@ -15,3 +15,10 @@ body, .title, .content, .quarto-title-banner, .quarto-title ,.title, .navbar-tit
   direction: rtl;
 }
 a {color: rgb(94 94 94); !important}
+.sourceCode {
+  overflow-y: hidden;
+  direction: ltr;
+}
+.cell-output.cell-output-stdout {
+  direction: ltr;
+}
