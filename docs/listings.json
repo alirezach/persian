@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2024-10-09-ai-good-or-evil/index.html",
+      "/posts/2024-10-05-extract-table-from-pdf/index.html",
       "/posts/2024-08-05-Olympic-history/index.html",
       "/posts/2024-08-03-bigdata-privacy-poverty/index.html",
       "/posts/2024-07-26-welcome/index.html"

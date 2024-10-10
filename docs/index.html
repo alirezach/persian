@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
@@ -131,6 +131,17 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="fa.css">
+<link rel="alternate" type="application/rss+xml" title="تحلیل داده با علی‌رضا" href="index.xml" data-external="1"><meta property="og:title" content="یادداشت‌های تحلیلی و آموزشی در دنیای تحلیل داده – تحلیل داده با علی‌رضا">
+<meta property="og:image" content="https://alirezach.github.io/persian/posts/2024-10-05-extract-table-from-pdf/featured.png">
+<meta property="og:site_name" content="تحلیل داده با علی‌رضا">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1792">
+<meta name="twitter:title" content="یادداشت‌های تحلیلی و آموزشی در دنیای تحلیل داده – تحلیل داده با علی‌رضا">
+<meta name="twitter:image" content="https://alirezach.github.io/persian/posts/2024-10-05-extract-table-from-pdf/featured.png">
+<meta name="twitter:site" content="@alirezach">
+<meta name="twitter:image-height" content="1024">
+<meta name="twitter:image-width" content="1792">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -157,6 +168,11 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">وبلاگ</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/alirezachamanzar/"> <i class="bi bi-linkedin" role="img">
@@ -189,6 +205,11 @@ window.Quarto = {
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="تغییر حالت تاریک"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="تغییر حالت خواندن">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -215,7 +236,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">دسته‌بندی‌ها</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">همه <span class="quarto-category-count">(3)</span></div><div class="category" data-category="تحلیل داده">تحلیل داده <span class="quarto-category-count">(1)</span></div><div class="category" data-category="داده">داده <span class="quarto-category-count">(1)</span></div><div class="category" data-category="عمومی">عمومی <span class="quarto-category-count">(1)</span></div><div class="category" data-category="پژوهش">پژوهش <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">دسته‌بندی‌ها</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">همه <span class="quarto-category-count">(5)</span></div><div class="category" data-category="تحلیل داده">تحلیل داده <span class="quarto-category-count">(2)</span></div><div class="category" data-category="داده">داده <span class="quarto-category-count">(1)</span></div><div class="category" data-category="عمومی">عمومی <span class="quarto-category-count">(1)</span></div><div class="category" data-category="پژوهشخوانی">پژوهشخوانی <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -229,7 +250,73 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="تحلیل داده,داده" data-listing-date-sort="1725309000000" data-listing-file-modified-sort="1725396583505" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2625">
+<div class="quarto-post image-right" data-index="0" data-categories="پژوهشخوانی" data-listing-date-sort="1728419400000" data-listing-file-modified-sort="1728583280533" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
+<div class="thumbnail">
+<p><a href="./posts/2024-10-09-ai-good-or-evil/index.html" class="no-external"></a></p><a href="./posts/2024-10-09-ai-good-or-evil/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-10-09-ai-good-or-evil/Ai good or evil.jpeg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-10-09-ai-good-or-evil/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-10-09-ai-good-or-evil/index.html" class="no-external">هوش مصنوعی؛ خیر یا شر؟</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-10-09-ai-good-or-evil/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('پژوهشخوانی'); return false;">
+پژوهشخوانی
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-10-09-ai-good-or-evil/index.html" class="no-external">بررسی پتانسیل‌ها و خطرات هوش مصنوعی و مسیری که باید برای مواجهه با آن طی کنیم</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-10-09-ai-good-or-evil/index.html" class="no-external">
+<div class="listing-date">
+Oct 9, 2024
+</div>
+<div class="listing-reading-time">
+2 دقیقه
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="تحلیل داده" data-listing-date-sort="1728073800000" data-listing-file-modified-sort="1728573168104" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="269">
+<div class="thumbnail">
+<p><a href="./posts/2024-10-05-extract-table-from-pdf/index.html" class="no-external"></a></p><a href="./posts/2024-10-05-extract-table-from-pdf/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-10-05-extract-table-from-pdf/featured.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-10-05-extract-table-from-pdf/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-10-05-extract-table-from-pdf/index.html" class="no-external">استخراج داده‌های جداول از PDF بدون برنامه‌نویسی</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-10-05-extract-table-from-pdf/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('تحلیل داده'); return false;">
+تحلیل داده
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-10-05-extract-table-from-pdf/index.html" class="no-external">استخراج یک یا چند جدول به صورت هم‌زمان از فایل‌های پی‌دی‌اف</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-10-05-extract-table-from-pdf/index.html" class="no-external">
+<div class="listing-date">
+Oct 5, 2024
+</div>
+<div class="listing-reading-time">
+2 دقیقه
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="تحلیل داده,داده" data-listing-date-sort="1725309000000" data-listing-file-modified-sort="1728573156160" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2625">
 <div class="thumbnail">
 <p><a href="./posts/2024-08-05-Olympic-history/index.html" class="no-external"></a></p><a href="./posts/2024-08-05-Olympic-history/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/2024-08-05-Olympic-history/featured.jpg" class="thumbnail-image"></p>
@@ -259,13 +346,13 @@ window.Quarto = {
 <div class="listing-date">
 Sep 3, 2024
 </div>
-<div class="listing-author">
-علیرضا چمن‌زار
+<div class="listing-reading-time">
+14 دقیقه
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="پژوهش" data-listing-date-sort="1722630600000" data-listing-file-modified-sort="1722798024518" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1299">
+<div class="quarto-post image-right" data-index="3" data-categories="پژوهشخوانی" data-listing-date-sort="1722630600000" data-listing-file-modified-sort="1728573193915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1299">
 <div class="thumbnail">
 <p><a href="./posts/2024-08-03-bigdata-privacy-poverty/index.html" class="no-external"></a></p><a href="./posts/2024-08-03-bigdata-privacy-poverty/index.html" class="no-external">
 <p class="card-img-top"><img src="posts\2024-08-03-bigdata-privacy-poverty\bigdatavsprivacy.jpeg" alt="تصویر ساخته‌ی هوش مصنوعی است." title="تصویر ساخته‌ی هوش مصنوعی است." class="thumbnail-image card-img"/></p>
@@ -279,8 +366,8 @@ Sep 3, 2024
 <a href="./posts/2024-08-03-bigdata-privacy-poverty/index.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('پژوهش'); return false;">
-پژوهش
+<div class="listing-category" onclick="window.quartoListingCategory('پژوهشخوانی'); return false;">
+پژوهشخوانی
 </div>
 </div>
 <div class="listing-description">
@@ -292,13 +379,13 @@ Sep 3, 2024
 <div class="listing-date">
 Aug 3, 2024
 </div>
-<div class="listing-author">
-علیرضا چمن‌زار
+<div class="listing-reading-time">
+7 دقیقه
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="عمومی" data-listing-date-sort="1721939400000" data-listing-file-modified-sort="1722261055466" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+<div class="quarto-post image-right" data-index="4" data-categories="عمومی" data-listing-date-sort="1721939400000" data-listing-file-modified-sort="1728573198254" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
 <div class="thumbnail">
 <p><a href="./posts/2024-07-26-welcome/index.html" class="no-external"></a></p><a href="./posts/2024-07-26-welcome/index.html" class="no-external">
 <p class="card-img-top"><img src="posts\2024-07-26-welcome\thumbnail.jpg"  class="thumbnail-image card-img"/></p>
@@ -325,8 +412,8 @@ Aug 3, 2024
 <div class="listing-date">
 Jul 26, 2024
 </div>
-<div class="listing-author">
-علیرضا چمن‌زار
+<div class="listing-reading-time">
+1 دقیقه
 </div>
 </a>
 </div>
@@ -572,7 +659,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/alirezach\.github\.io\/persian");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

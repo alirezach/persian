@@ -3,13 +3,20 @@ project:
   output-dir: docs
 
 website:
+  site-url: "https://alirezach.github.io/persian"
   title: "تحلیل داده با علی‌رضا"
+  reader-mode: true
+  open-graph: true
+  twitter-card: 
+    site: "@alirezach"
   navbar:
     left:
       - text: صفحه اصلی
         href: https://alirezach.github.io
       - text: وبلاگ
         href: index.qmd
+      - icon: rss
+        href: index.xml
 #      - about.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/alirezachamanzar/
@@ -29,8 +36,8 @@ website:
 format:
   html:
     theme:
-      light: sandstone
-      dark: sandstone
+      light: Litera
+      dark:  Cyborg
     css: fa.css
 language: fa.yml
 editor: visual
